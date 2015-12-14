@@ -17,10 +17,11 @@ if('errorMessage' in dict):
     		print(k, v)
 	print("############################################################################################")
 	sys.exit(1)
-print("RequestUUID:%s"%dict['RequestUUID'])
-print("Created:%s"%dict['Created'])
-print("from IP address:%s"%dict['Source IP'])
-payload=dict['Payload']
+print("version:%s"%dict['version'])
+print("requestUUID:%s"%dict['requestUUID'])
+print("created:%s"%dict['created'])
+print("from IP address:%s"%dict['source IP'])
+payload=dict['payload']
 for item in payload:
 	print(item)
 sys.exit(0)
