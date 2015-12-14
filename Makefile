@@ -1,10 +1,11 @@
 #!/usr/bin/make -f
 .PHONY: import check post extract verify clean
-all: import check post extract verify
+all: check import post extract verify
 #Check that the json request file is correct syntax
 check:
-	cat request.json | python -mjson.tool
+	ls request.json
 	ls url.txt
+	cat request.json | python -mjson.tool
 import:
 	gpg --import testkey.pub.asc
 #Post the request to the Licence Web Service
