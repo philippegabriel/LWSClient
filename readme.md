@@ -24,10 +24,10 @@ The service has been succesfully tested to handle up to 100 simultaneous request
 Access is by posting a json with an HTTP 'POST' method to the service endpoint url.
 
 ##### File description:
-* `[request.json`](request.json) Contains an example request in the json required format
-* [`jsonextractlicense.py`]() Sample Python code to decode the json response sent back by LWS
-* [`testkey.pub.asc`]() is the test public key, matching the test private key used with LWS at the moment
-* [`Makefile`]()
+* [`request.json`](request.json) Contains an example request in the json required format
+* [`jsonextractlicense.py`](jsonextractlicense.py) Sample Python code to decode the json response sent back by LWS
+* [`testkey.pub.asc`](testkey.pub.asc) is the test public key, matching the test private key used with LWS at the moment
+* [`Makefile`](Makefile)
   * check:  Checks that the request.json file has the correct syntax
   * import: Import the test public key in the gpg keyring for signing
   * post: send the request.json to LWS
