@@ -20,7 +20,7 @@ if('errorMessage' in dict):
 print("version:%s"%dict['version'])
 print("requestUUID:%s"%dict['requestUUID'])
 print("created:%s"%dict['created'])
-print("from IP address:%s"%dict['source IP'])
+print("sourceIP:%s"%dict['sourceIP'])
 payload=dict['payload']
 for item in payload:
 	print(item)
